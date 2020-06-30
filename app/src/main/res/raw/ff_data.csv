@@ -1,0 +1,385 @@
+1,RB1,Christian McCaffrey,275.4,Panthers,13
+2,RB2,Saquon Barkley,246.7,Giants,11
+3,WR1,Michael Thomas,206.3,Saints,6
+4,RB3,Alvin Kamara,243.9,Saints,6
+5,RB4,Dalvin Cook,237.6,Vikings,7
+6,RB5,Ezekiel Elliott,255.5,Cowboys,10
+7,WR2,Davante Adams,174.9,Packers,5
+8,WR3,Julio Jones,186.7,Falcons,10
+9,WR4,Tyreek Hill,186.9,Chiefs,10
+10,WR5,DeAndre Hopkins,168.1,Cardinals,8
+11,WR6,Chris Godwin,179.9,Buccaneers,13
+12,RB6,Austin Ekeler,225.4,Chargers,10
+13,QB1,Lamar Jackson,368.6,Ravens,8
+14,RB7,Derrick Henry,227,Titans,7
+15,TE1,Travis Kelce,143.2,Chiefs,10
+16,WR7,Mike Evans,174.4,Buccaneers,13
+17,RB8,Aaron Jones,207.1,Packers,5
+18,QB2,Patrick Mahomes,359.4,Chiefs,10
+19,RB9,Miles Sanders,210.1,Eagles,9
+20,RB10,Leonard Fournette,182.9,Jaguars,7
+21,TE2,George Kittle,145.3,49ers,11
+22,RB11,Nick Chubb,224.4,Browns,9
+23,RB12,Joe Mixon,203,Bengals,9
+24,RB13,Kenyan Drake,202.8,Cardinals,8
+25,WR8,Kenny Golladay,166.9,Lions,5
+26,WR9,Keenan Allen,140,Chargers,10
+27,WR10,Cooper Kupp,150.1,Rams,9
+28,RB14,Josh Jacobs,191.3,Raiders,6
+29,WR11,Amari Cooper,145.7,Cowboys,10
+30,WR12,Odell Beckham Jr.,141.2,Browns,9
+31,TE3,Zach Ertz,117.6,Eagles,9
+32,WR13,DJ Moore,145.1,Panthers,13
+33,RB15,Todd Gurley,197.1,Falcons,10
+34,WR14,Allen Robinson,134,Bears,11
+35,TE4,Mark Andrews,147.3,Ravens,8
+36,QB3,Russell Wilson,315,Seahawks,6
+37,QB4,Dak Prescott,317.2,Cowboys,10
+38,WR15,JuJu Smith-Schuster,132.5,Steelers,8
+39,WR16,AJ Brown,146.3,Titans,7
+40,WR17,Calvin Ridley,140.3,Falcons,10
+41,QB5,Deshaun Watson,292.5,Texans,8
+42,WR18,Adam Thielen,131.6,Vikings,7
+43,RB16,Melvin Gordon,171.5,Broncos,8
+44,WR19,Robert Woods,127.5,Rams,9
+45,QB6,Kyler Murray,284.7,Cardinals,8
+46,RB17,Clyde Edwards-Helaire,145.4,Chiefs,10
+47,WR20,Tyler Lockett,140.7,Seahawks,6
+48,TE5,Darren Waller,117.6,Raiders,6
+49,WR21,T.Y. Hilton,120.5,Colts,7
+50,RB18,Mark Ingram,173.8,Ravens,8
+51,RB19,LeVeon Bell,171.1,Jets,11
+52,WR22,Courtland Sutton,135.7,Broncos,8
+53,RB20,Chris Carson,157.5,Seahawks,6
+54,QB7,Josh Allen,276.1,Bills,11
+55,QB8,Tom Brady,283.2,Buccaneers,13
+56,WR23,Terry McLaurin,127.9,Redskins,8
+57,RB21,David Johnson,160.3,Texans,8
+58,QB9,Matt Ryan,281.5,Falcons,10
+59,WR24,DeVante Parker,127.8,Dolphins,11
+60,RB22,James Conner,152.2,Steelers,8
+61,WR25,DK Metcalf,132.5,Seahawks,6
+62,QB10,Drew Brees,264.4,Saints,6
+63,RB23,David Montgomery,159.6,Bears,11
+64,QB11,Matthew Stafford,266.5,Lions,5
+65,QB12,Aaron Rodgers,271.5,Packers,5
+66,QB13,Carson Wentz,262.5,Eagles,9
+67,WR26,Jarvis Landry,124,Browns,9
+68,WR27,Deebo Samuel,117.1,49ers,11
+69,WR28,Stefon Diggs,116.4,Bills,11
+70,TE6,Tyler Higbee,97.7,Rams,9
+71,TE7,Hunter Henry,102.3,Chargers,10
+72,WR29,DJ Chark,126.9,Jaguars,7
+73,QB14,Jared Goff,276.8,Rams,9
+74,QB15,Daniel Jones,254.6,Giants,11
+75,TE8,Rob Gronkowski,97.8,Buccaneers,13
+76,QB16,Joe Burrow,263.1,Bengals,9
+77,QB17,Ryan Tannehill,259,Titans,7
+78,WR30,A.J. Green,128.9,Bengals,9
+79,WR31,Julian Edelman,104.2,Patriots,6
+80,WR32,Tyler Boyd,119,Bengals,9
+81,RB24,Devin Singletary,130.1,Bills,11
+82,WR33,Marvin Jones,127,Lions,5
+83,RB25,D'Andre Swift,141.9,Lions,5
+84,RB26,Raheem Mostert,154.5,49ers,11
+85,RB27,Cam Akers,136.1,Rams,9
+86,RB28,Jonathan Taylor,123.3,Colts,7
+87,WR34,Michael Gallup,116.7,Cowboys,10
+88,TE9,Evan Engram,88.5,Giants,11
+89,RB29,Kareem Hunt,133.8,Browns,9
+90,RB30,James White,108.8,Patriots,6
+91,QB18,Kirk Cousins,261.6,Vikings,7
+92,QB19,Baker Mayfield,251.5,Browns,9
+93,WR35,Marquise Brown,111.9,Ravens,8
+94,QB20,Ben Roethlisberger,230.8,Steelers,8
+95,WR36,Jamison Crowder,97.2,Jets,11
+96,RB31,Derrius Guice,134.2,Redskins,8
+97,QB21,Jimmy Garoppolo,239.7,49ers,11
+98,RB32,Ke'Shawn Vaughn,125.6,Buccaneers,13
+99,WR37,John Brown,107.9,Bills,11
+100,RB33,Tarik Cohen,104.1,Bears,11
+101,RB34,Darrell Henderson,113.5,Rams,9
+102,WR38,Diontae Johnson,95.1,Steelers,8
+103,WR39,Sterling Shepard,97.2,Giants,11
+104,WR40,Henry Ruggs III,105,Raiders,6
+105,WR41,Mike Williams,119.2,Chargers,10
+106,WR42,Preston Williams,103.5,Dolphins,11
+107,TE10,Austin Hooper,79.4,Browns,9
+108,RB35,Latavius Murray,131.6,Saints,6
+109,TE11,Mike Gesicki,82.7,Dolphins,11
+110,RB36,Phillip Lindsay,126.4,Broncos,8
+111,WR43,Will Fuller,100.1,Texans,8
+112,TE12,Jared Cook,93.1,Saints,6
+113,RB37,Sony Michel,136.6,Patriots,6
+114,TE13,T.J. Hockenson,84.8,Lions,5
+115,QB22,Philip Rivers,230.3,Colts,7
+116,RB38,Nyheim Hines,103.2,Colts,7
+117,WR44,Emmanuel Sanders,96.3,Saints,6
+118,QB23,Gardner Minshew,228.7,Jaguars,7
+119,TE14,Noah Fant,79.8,Broncos,8
+120,WR45,Darius Slayton,98,Giants,11
+121,WR46,Mecole Hardman,96,Chiefs,10
+122,QB24,Sam Darnold,226.2,Jets,11
+123,WR47,Golden Tate,90.5,Giants,11
+124,RB39,Jordan Howard,111.3,Dolphins,11
+125,DEF1,49ers,123.9,49ers,11
+126,QB25,Drew Lock,220.8,Broncos,8
+127,WR48,Anthony Miller,91.1,Bears,11
+128,QB26,Teddy Bridgewater,231.8,Panthers,13
+129,RB40,Tevin Coleman,132.8,49ers,11
+130,WR49,Brandin Cooks,90.7,Texans,8
+131,QB27,Tua Tagovailoa,222.3,Dolphins,11
+132,WR50,Jerry Jeudy,93.2,Broncos,8
+133,DEF2,Steelers,125.5,Steelers,8
+134,TE15,Jack Doyle,72.1,Colts,7
+135,TE16,Dallas Goedert,70.8,Eagles,9
+136,WR51,Christian Kirk,79.8,Cardinals,8
+137,WR52,Alshon Jeffery,87.6,Eagles,9
+138,WR53,Breshad Perriman,95,Jets,11
+139,DEF3,Ravens,124,Ravens,8
+140,WR54,DeSean Jackson,96.5,Eagles,9
+141,QB28,Jarrett Stidham,199,Patriots,6
+142,RB41,Jamaal Williams,104.2,Packers,5
+143,QB29,Derek Carr,212.5,Raiders,6
+144,K1,Harrison Butker,140.3,Chiefs,10
+145,RB42,Justin Jackson,113.6,Chargers,10
+146,TE17,Jonnu Smith,79.2,Titans,7
+147,QB30,Dwayne Haskins,210.3,Redskins,8
+148,WR55,Justin Jefferson,85.8,Vikings,7
+149,DEF4,Bills,118.1,Bills,11
+150,DEF5,Patriots,118.4,Patriots,6
+151,WR56,N'Keal Harry,79.2,Patriots,6
+152,RB43,Kerryon Johnson,83,Lions,5
+153,DEF6,Bears,118.7,Bears,11
+154,RB44,J.K. Dobbins,93.3,Ravens,8
+155,K2,Justin Tucker,126.5,Ravens,8
+156,WR57,Sammy Watkins,85.5,Chiefs,10
+157,WR58,Dede Westbrook,75.2,Jaguars,7
+158,TE18,Hayden Hurst,78.9,Falcons,10
+159,RB45,Boston Scott,93.2,Eagles,9
+160,DEF7,Vikings,116.4,Vikings,7
+161,WR59,CeeDee Lamb,84.8,Cowboys,10
+162,K3,Wil Lutz,126.1,Saints,6
+163,RB46,Duke Johnson,89.2,Texans,8
+164,WR60,Parris Campbell,65.4,Colts,7
+165,QB31,Tyrod Taylor,202.7,Chargers,10
+166,DEF8,Rams,115.8,Rams,9
+167,DEF9,Chargers,117.9,Chargers,10
+168,TE19,Chris Herndon,70.1,Jets,11
+169,DEF10,Saints,112.5,Saints,6
+170,RB47,Tony Pollard,94.2,Cowboys,10
+171,K4,Robbie Gould,124,49ers,11
+172,WR61,Corey Davis,85.4,Titans,7
+173,K5,Matt Prater,123.7,Lions,5
+174,WR62,Robby Anderson,85.5,Panthers,13
+175,RB48,Jaylen Samuels,76.2,Steelers,8
+176,TE20,Irv Smith,67.2,Vikings,7
+177,WR63,Michael Pittman Jr.,85,Colts,7
+178,DEF11,Seahawks,117.4,Seahawks,6
+179,K6,Matt Gay,124.2,Buccaneers,13
+180,WR64,Larry Fitzgerald,82.3,Cardinals,8
+181,TE21,Blake Jarwin,65.4,Cowboys,10
+182,WR65,Hunter Renfrow,70,Raiders,6
+183,WR66,Curtis Samuel,77.8,Panthers,13
+184,RB49,Rashaad Penny,94.9,Seahawks,6
+185,DEF12,Broncos,108.5,Broncos,8
+186,RB50,Jalen Richard,70,Raiders,6
+187,DEF13,Jets,112.1,Jets,11
+188,RB51,Zack Moss,96.8,Bills,11
+189,RB52,Alexander Mattison,81.3,Vikings,7
+190,RB53,Matt Breida,109.9,Dolphins,11
+191,QB32,Mitchell Trubisky,158.9,Bears,11
+192,RB54,Marlon Mack,83,Colts,7
+193,IDP1,Darius Leonard,171,Colts,7
+194,WR67,Russell Gage,67.8,Falcons,10
+195,WR68,Steven Sims,66,Redskins,8
+196,DEF14,Chiefs,110.2,Chiefs,10
+197,WR69,Randall Cobb,74.6,Texans,8
+198,K7,Zane Gonzalez,115.3,Cardinals,8
+199,DEF15,Cowboys,113,Cowboys,10
+200,DEF16,Eagles,113,Eagles,9
+201,DEF17,Packers,115.2,Packers,5
+202,WR70,Allen Lazard,78.2,Packers,5
+203,DEF18,Browns,114,Browns,9
+204,RB55,Damien Williams,67.1,Chiefs,10
+205,RB56,Darrynton Evans,68,Titans,7
+206,WR71,Cole Beasley,66.3,Bills,11
+207,RB57,Adrian Peterson,85,Redskins,8
+208,WR72,Jalen Reagor,62.6,Eagles,9
+209,WR73,Denzel Mims,81.3,Jets,11
+210,K8,Jake Elliott,111.5,Eagles,9
+211,DEF19,Buccaneers,112.4,Buccaneers,13
+212,WR74,Danny Amendola,65.1,Lions,5
+213,DEF20,Colts,106.4,Colts,7
+214,K9,Jason Myers,112.7,Seahawks,6
+215,TE22,Kyle Rudolph,68,Vikings,7
+216,WR75,Mohamed Sanu,68.1,Patriots,6
+217,TE23,Eric Ebron,64.7,Steelers,8
+218,IDP2,Joe Schobert,149,Browns,9
+219,IDP3,Cory Littleton,147,Raiders,6
+220,K10,Younghoe Koo,115.1,Falcons,10
+221,DEF21,Titans,107.3,Titans,7
+222,IDP4,Jordan Hicks,148,Cardinals,8
+223,IDP5,Bobby Wagner,142,Seahawks,6
+224,RB58,Ronald Jones II,77.5,Buccaneers,13
+225,IDP6,Chandler Jones,149,Cardinals,8
+226,IDP7,T.J. Watt,145,Steelers,8
+227,IDP8,Blake Martinez,141,Packers,5
+228,K11,Chris Boswell,104.8,Steelers,8
+229,TE24,Ian Thomas,62.5,Panthers,13
+230,WR76,Brandon Aiyuk,58.2,49ers,11
+231,RB59,Chase Edmonds,70,Cardinals,8
+232,TE25,Jace Sternberger,57.9,Packers,5
+233,WR77,Kenny Stills,71,Texans,8
+234,K12,Austin Seibert,110.2,Browns,9
+235,K13,Ka'imi Fairbairn,111.7,Texans,8
+236,RB60,Ito Smith,68.8,Falcons,10
+237,WR78,Adam Humphries,62.1,Titans,7
+238,WR79,Chris Conley,68.7,Jaguars,7
+239,IDP9,Shaquil Barrett,146,Buccaneers,13
+240,K14,Mason Crosby,114,Packers,5
+241,K15,Greg Zuerlein,125.5,Cowboys,10
+242,DEF22,Redskins,105.9,Redskins,8
+243,DEF23,Texans,104.1,Texans,8
+244,K16,Brandon McManus,106,Broncos,8
+245,IDP10,Jaylon Smith,136,Cowboys,10
+246,K17,Greg Joseph,120.3,Titans,7
+247,K18,Chase McLaughlin,120.5,Colts,7
+248,WR80,James Washington,60.9,Steelers,8
+249,K19,Dan Bailey,109.9,Vikings,7
+250,WR81,John Ross,62,Bengals,9
+251,IDP11,Logan Ryan,152,Titans,7
+252,IDP12,Eric Reid,136,Panthers,13
+253,IDP13,Budda Baker,132,Cardinals,8
+254,WR82,Tyrell Williams,70,Raiders,6
+255,IDP14,Fred Warner,138,49ers,11
+256,TE26,Jimmy Graham,56.6,Bears,11
+257,K20,Stephen Hauschka,110.1,Bills,11
+258,K21,Dustin Hopkins,111,Redskins,8
+259,K22,Michael Badgley,105.5,Chargers,10
+260,QB33,Justin Herbert,93.1,Chargers,10
+261,RB61,Giovani Bernard,56.9,Bengals,9
+262,TE27,Greg Olsen,59,Seahawks,6
+263,K23,Josh Lambo,108.6,Jaguars,7
+264,IDP15,Danielle Hunter,124,Vikings,7
+265,IDP16,Jamal Adams,120,Jets,11
+266,K24,Aldrick Rosas,97,Giants,11
+267,WR83,Antonio Gibson,57.8,Redskins,8
+268,IDP17,Zach Cunningham,129,Texans,8
+269,IDP18,De'Vondre Campbell,129,Falcons,10
+270,IDP19,Lavonte David,121,Buccaneers,13
+271,K25,Joey Slye,100.5,Panthers,13
+272,IDP20,Tremaine Edmunds,107,Bills,11
+273,K26,Eddy Pineiro,109.7,Bears,11
+274,QB34,Nick Foles,97.2,Bears,11
+275,IDP21,DeMario Davis,125,Saints,6
+276,IDP22,Aaron Donald,108,Rams,9
+277,K27,Brett Maher,100.3,Jets,11
+278,RB62,Ryquell Armstead,53.5,Jaguars,7
+279,TE28,Dawson Knox,49.8,Bills,11
+280,K28,Daniel Carlson,101.2,Raiders,6
+281,IDP23,Jamie Collins,130,Lions,5
+282,IDP24,Jordan Poyer,119,Bills,11
+283,K29,Randy Bullock,105.5,Bengals,9
+284,IDP25,Bud Dupree,117,Steelers,8
+285,IDP26,K.J. Wright,120,Seahawks,6
+286,WR84,Miles Boykin,55,Ravens,8
+287,IDP27,Devin Bush,121,Steelers,8
+288,IDP28,Jerome Baker,118,Dolphins,11
+289,RB63,Bryce Love,58.7,Redskins,8
+290,WR85,Albert Wilson,52.1,Dolphins,11
+291,RB64,Rex Burkhead,61.2,Patriots,6
+292,TE29,Jeremy Sprinkle,46.2,Redskins,8
+293,IDP29,Harrison Smith,111,Vikings,7
+294,K30,Jason Sanders,104.7,Dolphins,11
+295,IDP30,Devin White,116,Buccaneers,13
+296,RB65,Justice Hill,62.4,Ravens,8
+297,IDP31,Vonn Bell,111,Saints,6
+298,IDP32,Cameron Jordan,106,Saints,6
+299,IDP33,Landon Collins,105,Redskins,8
+300,DEF24,Cardinals,110.7,Cardinals,8
+301,IDP34,Deion Jones,102,Falcons,10
+302,TE30,David Njoku,45.5,Browns,9
+303,IDP35,Cameron Heyward,107,Steelers,8
+304,IDP36,Dante Fowler Jr.,109,Rams,9
+305,IDP37,Myles Garrett,99,Browns,9
+306,DEF25,Giants,105.1,Giants,11
+307,IDP38,Minkah Fitzpatrick,109,Steelers,8
+308,WR86,K.J. Hamler,47.5,Broncos,8
+309,TE31,Tyler Eifert,44.2,Jaguars,7
+310,IDP39,Eric Kendricks,109,Vikings,7
+311,IDP40,Shawn Williams,103,Bengals,9
+312,IDP41,Carlos Dunlap,97,Bengals,9
+313,RB66,Dion Lewis,48.2,Giants,11
+314,DEF26,Bengals,102.6,Bengals,9
+315,IDP42,Joey Bosa,101,Chargers,10
+316,DEF27,Lions,102.4,Lions,5
+317,WR87,Josh Reynolds,48.5,Rams,9
+318,IDP43,Za'Darius Smith,100,Packers,5
+319,DEF28,Raiders,101.5,Raiders,6
+320,IDP44,C.J. Mosley,101,Jets,11
+321,DEF29,Falcons,100.9,Falcons,10
+322,RB67,Benny Snell,62.3,Steelers,8
+323,IDP45,Tracy Walker,103,Lions,5
+324,DEF30,Dolphins,100.3,Dolphins,11
+325,DEF31,Panthers,100,Panthers,13
+326,WR88,Tre'Quan Smith,51.9,Saints,6
+327,WR89,Willie Snead IV,45.6,Ravens,8
+328,DEF32,Jaguars,99.2,Jaguars,7
+329,IDP46,Maxx Crosby,93,Raiders,6
+330,IDP47,DeForest Buckner,95,Colts,7
+331,IDP48,Derwin James,88,Chargers,10
+332,TE32,Vance McDonald,35.9,Steelers,8
+333,TE33,Nick Boyle,35.6,Ravens,8
+334,TE34,C.J. Uzomah,35.5,Bengals,9
+335,TE35,Will Dissly,40.6,Seahawks,6
+336,TE36,O.J. Howard,38.5,Buccaneers,13
+337,WR90,Marquez Valdes-Scantling,46.5,Packers,5
+338,RB68,Darwin Thompson,44.9,Chiefs,10
+339,IDP49,Nick Bosa,86,49ers,11
+340,TE37,Darren Fells,36.8,Texans,8
+341,RB69,Royce Freeman,40.2,Broncos,8
+342,IDP50,J.J. Watt,78,Texans,8
+343,WR91,Tee Higgins,40.2,Bengals,9
+344,TE38,Mo Alie-Cox,37,Colts,7
+345,RB70,Lamical Perine,55.5,Jets,11
+346,TE39,Jordan Akins,33.3,Texans,8
+347,RB71,Damien Harris,44.8,Patriots,6
+348,WR92,Jake Kumerow,42.5,Packers,5
+349,WR93,Trent Taylor,34.3,49ers,11
+350,TE40,Ryan Griffin,33.3,Jets,11
+351,QB35,Ryan Fitzpatrick,47.4,Dolphins,11
+352,TE41,Gerald Everett,31.6,Rams,9
+353,WR94,Tajae Sharpe,39.1,Vikings,7
+354,TE42,Dan Arnold,33.8,Cardinals,8
+355,RB72,Reggie Bonnafon,39,Panthers,13
+356,TE43,Anthony Firkser,31.4,Titans,7
+357,TE44,Josh Oliver,30,Jaguars,7
+358,RB73,A.J. Dillon,37.2,Packers,5
+359,WR95,Tyler Johnson,38.1,Buccaneers,13
+360,TE45,Jaeden Graham,27.6,Falcons,10
+361,TE46,Jason Witten,25,Raiders,6
+362,TE47,Jesse James,25.8,Lions,5
+363,WR96,Jalen Hurd,27.6,49ers,11
+364,TE48,Foster Moreau,24.8,Raiders,6
+365,TE49,Kaden Smith,22.1,Giants,11
+366,WR97,Chase Claypool,24.5,Steelers,8
+367,TE50,Jacob Hollister,21.2,Seahawks,6
+368,WR98,Nelson Agholor,22.2,Raiders,6
+369,WR99,Andy Isabella,23.3,Cardinals,8
+370,TE51,Drew Sample,20.9,Bengals,9
+371,TE52,Cameron Brate,20,Buccaneers,13
+372,TE53,Trey Burton,19.9,Colts,7
+373,WR100,Laviska Shenault Jr.,21.6,Jaguars,7
+374,WR101,Gabriel Davis,23,Bills,11
+375,WR102,Van Jefferson,22.3,Rams,9
+376,WR103,Keke Coutee,17.5,Texans,8
+377,TE54,Cole Kmet,16.6,Bears,11
+378,TE55,Jordan Thomas,16.9,Texans,8
+379,WR104,Zach Pascal,16.5,Colts,7
+380,QB36,Taysom Hill,22.5,Saints,6
+381,WR105,Antonio Gandy-Golden,17,Redskins,8
+382,WR106,Quincy Enunwa,14.1,Jets,11
+383,WR107,Marquise Goodwin,8.2,Eagles,9
+384,WR108,KeeSean Johnson,6.6,Cardinals,8
+385,WR109,Donovan Peoples-Jones,4.9,Browns,9
