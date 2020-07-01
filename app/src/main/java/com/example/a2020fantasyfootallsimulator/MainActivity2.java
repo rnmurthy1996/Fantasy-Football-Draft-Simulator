@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -30,6 +31,13 @@ public class MainActivity2 extends AppCompatActivity {
 
     public static ArrayList<Team> teamList = new ArrayList<Team>();
     public static ArrayList<Player> playerList = new ArrayList<Player>();
+    public static String buttonVal;
+    public static int count;
+
+    public static String[] arraySpinner;
+    public static Spinner s;
+    public static ScrollView scroll;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,56 +105,129 @@ public class MainActivity2 extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        count = 1;
         final Handler handler = new Handler();
         final Runnable runnable = new Runnable() {
-            int count = 1;
+
             public void run() {
 
                 if (count < num * 14 + 1) {
-                    String[] arraySpinner = new String[playerList.size()];
-                    for(int i = 0; i < playerList.size(); i++) {
-                        arraySpinner[i] = playerList.get(i).getName() + "---" + playerList.get(i).getPosition() + "---" + Double.toString(playerList.get(i).getProjPoints());
-                    }
-                    final Spinner s = (Spinner) findViewById(R.id.availPlayers);
-                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity2.this,
-                            android.R.layout.simple_spinner_item, arraySpinner);
-                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                    s.setAdapter(adapter);
 
-                    TableLayout draft = (TableLayout)findViewById(R.id.tableLayout);
-                    TableRow tr =  new TableRow(MainActivity2.this);
-                    tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                    TextView c1 = new TextView(MainActivity2.this);
-                    c1.setText("Pick #" + Integer.toString(count) + "   ");
-                    c1.setTextSize(20);
-                    TextView c2 = new TextView(MainActivity2.this);
+                    Button btn = (Button) findViewById(R.id.draftButton);
+                    btn.setEnabled(false);
                     String team = "";
                     for(int k = 0; k < teamList.size(); k++) {
                         if(teamList.get(k).getPicks().contains(count))
                             team = teamList.get(k).getName();
                     }
-                    c2.setText(team + "   ");
-                    c2.setTextSize(20);
 
-                    TextView c3 = new TextView(MainActivity2.this);
-                    Random rn = new Random();
-                    int rand = rn.nextInt(2 - 0 + 1) + 0;
-                    Player pl = playerList.remove(rand);
-                    c3.setText(pl.getName());
-                    c3.setTextSize(20);
+                    if(!team.equals("Player")) {
+                        makePick(team, count);
+                        count++;
+                        handler.postDelayed(this, 1000);
+                    }
 
-                    tr.addView(c1);
-                    tr.addView(c2);
-                    tr.addView(c3);
-                    draft.addView(tr);
-                    count++;
+                    else {
+                        btn.setEnabled(true);
+                        handler.postDelayed(this, 1000);
 
-                    handler.postDelayed(this, 1000);
+                    }
+
                 }
             }
         };
         handler.post(runnable);
+
+
+
+        Button btn = (Button) findViewById(R.id.draftButton);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String team = "";
+                for(int k = 0; k < teamList.size(); k++) {
+                    if(teamList.get(k).getPicks().contains(count))
+                        team = teamList.get(k).getName();
+                }
+                buttonVal = s.getSelectedItem().toString();
+
+                Log.d("log", buttonVal);
+                TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
+                TableRow tr = new TableRow(MainActivity2.this);
+                tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                TextView c1 = new TextView(MainActivity2.this);
+                c1.setText("Pick #" + Integer.toString(count) + "   ");
+                c1.setTextSize(20);
+                TextView c2 = new TextView(MainActivity2.this);
+
+                c2.setText(team + "   ");
+                c2.setTextSize(20);
+
+                TextView c3 = new TextView(MainActivity2.this);
+                String[] play = buttonVal.split("---");
+                String name = play[0];
+                Player pl = null;
+                for(int i = 0; i < playerList.size(); i++) {
+                    if(playerList.get(i).getName().equals(name)) {
+                        pl = playerList.remove(i);
+                    }
+                }
+                c3.setText(pl.getName());
+                c3.setTextSize(20);
+
+                tr.addView(c1);
+                tr.addView(c2);
+                tr.addView(c3);
+                draft.addView(tr);
+                count++;
+                updateSpinner();
+                //scroll.scrollTo(0, scroll.getBottom());
+
+                v.setEnabled(false);
+            }
+        });
+
     }
 
+    public void makePick(String t, int c) {
+        updateSpinner();
+        TableLayout draft = (TableLayout)findViewById(R.id.tableLayout);
+        TableRow tr =  new TableRow(MainActivity2.this);
+        tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        TextView c1 = new TextView(MainActivity2.this);
+        c1.setText("Pick #" + Integer.toString(c) + "   ");
+        c1.setTextSize(20);
+        TextView c2 = new TextView(MainActivity2.this);
+
+        c2.setText(t + "   ");
+        c2.setTextSize(20);
+
+        TextView c3 = new TextView(MainActivity2.this);
+        Random rn = new Random();
+        int rand = rn.nextInt(2 - 0 + 1) + 0;
+        Player pl = playerList.remove(rand);
+        c3.setText(pl.getName());
+        c3.setTextSize(20);
+
+        tr.addView(c1);
+        tr.addView(c2);
+        tr.addView(c3);
+        draft.addView(tr);
+        updateSpinner();
+        //scroll.scrollTo(0, scroll.getBottom());
+    }
+
+    public void updateSpinner() {
+        Log.d("log","reached");
+        arraySpinner = new String[playerList.size()];
+        for (int i = 0; i < playerList.size(); i++) {
+            arraySpinner[i] = playerList.get(i).getName() + "---" + playerList.get(i).getPosition() + "---" + Double.toString(playerList.get(i).getProjPoints());
+        }
+        s = (Spinner) findViewById(R.id.availPlayers);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity2.this,
+                android.R.layout.simple_spinner_item, arraySpinner);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        s.setAdapter(adapter);
+    }
 }
 
