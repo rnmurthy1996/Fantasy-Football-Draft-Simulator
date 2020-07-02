@@ -46,6 +46,7 @@ public class MainActivity2 extends AppCompatActivity {
     public static Spinner s;
     public static ScrollView scroll;
     public static int num;
+    public static int round = 0;
 
 
     @Override
@@ -165,12 +166,7 @@ public class MainActivity2 extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView3);
-                scrollView.post(new Runnable() {
-                    public void run() {
-                        scrollView.fullScroll(View.FOCUS_DOWN);
-                    }
-                });
+
                 String team = "";
                 Team myTeam = currentTeam;
                 for(int k = 0; k < teamList.size(); k++) {
@@ -199,7 +195,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getName().equals(name)) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                     }
                 }
                 setPlayer(myTeam, pl);
@@ -221,7 +217,12 @@ public class MainActivity2 extends AppCompatActivity {
                 draft.addView(tr);
                 count++;
 
-                //scroll.scrollTo(0, scroll.getBottom());
+                final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView3);
+                scrollView.post(new Runnable() {
+                    public void run() {
+                        scrollView.fullScroll(View.FOCUS_DOWN);
+                    }
+                });
 
                 v.setEnabled(false);
             }
@@ -230,12 +231,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void makePick(String t, int c) {
-        final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView3);
-        scrollView.post(new Runnable() {
-            public void run() {
-                scrollView.fullScroll(View.FOCUS_DOWN);
-            }
-        });
+
         TableLayout draft = (TableLayout)findViewById(R.id.tableLayout);
         TableRow tr =  new TableRow(MainActivity2.this);
         tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -430,10 +426,52 @@ public class MainActivity2 extends AppCompatActivity {
         tr.addView(c2);
         tr.addView(c3);
         draft.addView(tr);
-        //scroll.scrollTo(0, scroll.getBottom());
+
+        final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView3);
+        scrollView.post(new Runnable() {
+            public void run() {
+                scrollView.fullScroll(View.FOCUS_DOWN);
+            }
+        });
     }
 
     public void updateSpinner() {
+        if(num == 1) {
+            if(round == 0) {
+                round++;
+            }
+            else {
+                TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
+                TableRow tr = new TableRow(MainActivity2.this);
+                tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                TextView c1 = new TextView(MainActivity2.this);
+                c1.setText("Round " + Integer.toString(round) + ":");
+                c1.setTextSize(20);
+                tr.addView(c1);
+                draft.addView(tr);
+                round++;
+            }
+        }
+        else if(count % num == 1) {
+            if(round == 0) {
+                round++;
+            }
+            else {
+                TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
+                TableRow tr = new TableRow(MainActivity2.this);
+                tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                TextView c1 = new TextView(MainActivity2.this);
+                c1.setText("Round " + Integer.toString(round) + ":");
+                c1.setTextSize(20);
+                tr.addView(c1);
+                draft.addView(tr);
+                round++;
+            }
+
+
+        }
+
+
         ArrayList <Player> possiblePicks = new ArrayList<Player>(playerList);
 
         for(int i = 0; i < teamList.size(); i++) {
