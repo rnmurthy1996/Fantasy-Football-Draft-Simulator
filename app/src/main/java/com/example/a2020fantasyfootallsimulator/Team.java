@@ -4,20 +4,20 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Team {
-    private String name;
-    private Player qb;
-    private Player rb1;
-    private Player rb2;
-    private Player wr1;
-    private Player wr2;
-    private Player wr3;
-    private Player te;
-    private Player dst;
-    private Player k;
-    private Player bn1;
-    private Player bn2;
-    private Player bn3;
-    private Player bn4;
+    private String name = null;
+    private Player qb = null;
+    private Player rb1 = null;
+    private Player rb2 = null;
+    private Player wr1 = null;
+    private Player wr2 = null;
+    private Player wr3 = null;
+    private Player te = null;
+    private Player dst = null;
+    private Player k = null;
+    private Player bn1 = null;
+    private Player bn2 = null;
+    private Player bn3 = null;
+    private Player bn4 = null;
     private ArrayList<Integer> picks = new ArrayList<Integer>();
 
     Team(String n) {

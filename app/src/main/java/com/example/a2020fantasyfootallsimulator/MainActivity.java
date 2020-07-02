@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String[] arraySpinner = new String[] {
-                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
         };
         final Spinner s = (Spinner) findViewById(R.id.numTeams);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
