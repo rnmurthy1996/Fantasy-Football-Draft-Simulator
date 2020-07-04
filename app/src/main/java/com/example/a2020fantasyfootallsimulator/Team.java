@@ -1,9 +1,10 @@
 package com.example.a2020fantasyfootallsimulator;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Team {
+public class Team implements Serializable {
     private String name = null;
     private Player qb = null;
     private Player rb1 = null;

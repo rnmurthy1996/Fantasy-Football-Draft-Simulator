@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ScrollView;
@@ -25,6 +27,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.nio.Buffer;
 import java.nio.charset.Charset;
@@ -47,6 +50,7 @@ public class MainActivity2 extends AppCompatActivity {
     public static ScrollView scroll;
     public static int num;
     public static int round = 0;
+    public static boolean justPicked;
 
 
     @Override
@@ -69,7 +73,7 @@ public class MainActivity2 extends AppCompatActivity {
             teamList.add(t);
         }
 
-        Team p = new Team("Player");
+        Team p = new Team("User");
         teamList.add(p);
 
         for(int i = playerNum; i < num; i++) {
@@ -84,8 +88,6 @@ public class MainActivity2 extends AppCompatActivity {
                 teamList.get(i).getPicks().add(j * num + 2 * num - (i));
             }
         }
-
-
 
         InputStream is = getResources().openRawResource(R.raw.ff_data);
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
@@ -124,12 +126,12 @@ public class MainActivity2 extends AppCompatActivity {
 
         count = 1;
         updateSpinner();
+
         final Handler handler = new Handler();
         final Runnable runnable = new Runnable() {
 
             public void run() {
                 if (count < num * 13 + 1) {
-
                     Button btn = (Button) findViewById(R.id.draftButton);
                     btn.setEnabled(false);
                     String team = "";
@@ -139,19 +141,25 @@ public class MainActivity2 extends AppCompatActivity {
                     }
 
                     for(int k = 0; k < teamList.size(); k++) {
-                        if(teamList.get(k).getName().equals("Player"))
+                        if(teamList.get(k).getName().equals("User"))
                             currentTeam = teamList.get(k);
                     }
 
-                    if(!team.equals("Player")) {
+                    if(!team.equals("User")) {
+                        handler.postDelayed(this, 1000);
                         makePick(team, count);
                         count++;
-                        handler.postDelayed(this, 1000);
+                        if(count == num * 13 + 1) {
+                            Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+                            startActivity(intent);
+                            round = 0;
+                            finish();
+                        }
                     }
 
                     else {
                         btn.setEnabled(true);
-                        handler.postDelayed(this, 1000);
+                        handler.postDelayed(this, 2000);
                     }
 
                 }
@@ -159,7 +167,6 @@ public class MainActivity2 extends AppCompatActivity {
             }
         };
         handler.post(runnable);
-
 
         Button btn = (Button) findViewById(R.id.draftButton);
 
@@ -170,7 +177,7 @@ public class MainActivity2 extends AppCompatActivity {
                 String team = "";
                 Team myTeam = currentTeam;
                 for(int k = 0; k < teamList.size(); k++) {
-                    if(teamList.get(k).getName().equals("Player"))
+                    if(teamList.get(k).getName().equals("User"))
                         team = teamList.get(k).getName();
                 }
 
@@ -182,11 +189,11 @@ public class MainActivity2 extends AppCompatActivity {
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Pick #" + Integer.toString(count) + "   ");
-                c1.setTextSize(20);
+                c1.setTextSize(19);
                 TextView c2 = new TextView(MainActivity2.this);
 
                 c2.setText(team + "   ");
-                c2.setTextSize(20);
+                c2.setTextSize(19);
 
                 TextView c3 = new TextView(MainActivity2.this);
                 String[] play = buttonVal.split("---");
@@ -200,20 +207,26 @@ public class MainActivity2 extends AppCompatActivity {
                 }
                 setPlayer(myTeam, pl);
                 for(int i = 0; i < teamList.size(); i++) {
-                    if(teamList.get(i).getName().equals("Player")) {
+                    if(teamList.get(i).getName().equals("User")) {
                         teamList.set(i, myTeam);
                     }
                 }
-                c3.setText(pl.getName());
-                c3.setTextSize(20);
+                c3.setText(pl.getName() + "   ");
+                c3.setTextSize(19);
+
+                TextView c4 = new TextView(MainActivity2.this);
+                c4.setText(pl.getPosition());
+                c4.setTextSize(19);
 
                 c1.setTextColor(Color.GREEN);
                 c2.setTextColor(Color.GREEN);
                 c3.setTextColor(Color.GREEN);
+                c4.setTextColor(Color.GREEN);
 
                 tr.addView(c1);
                 tr.addView(c2);
                 tr.addView(c3);
+                tr.addView(c4);
                 draft.addView(tr);
                 count++;
 
@@ -225,6 +238,13 @@ public class MainActivity2 extends AppCompatActivity {
                 });
 
                 v.setEnabled(false);
+
+                if(count == num * 13 + 1) {
+                    Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+                    startActivity(intent);
+                    round = 0;
+                    finish();
+                }
             }
         });
 
@@ -237,11 +257,11 @@ public class MainActivity2 extends AppCompatActivity {
         tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         TextView c1 = new TextView(MainActivity2.this);
         c1.setText("Pick #" + Integer.toString(c) + "   ");
-        c1.setTextSize(20);
+        c1.setTextSize(19);
         TextView c2 = new TextView(MainActivity2.this);
 
         c2.setText(t + "   ");
-        c2.setTextSize(20);
+        c2.setTextSize(19);
 
         Team team = null;
         for(int i = 0; i < teamList.size(); i++) {
@@ -420,11 +440,17 @@ public class MainActivity2 extends AppCompatActivity {
                 teamList.set(i, team);
             }
         }
-        c3.setText(pl.getName());
-        c3.setTextSize(20);
+        c3.setText(pl.getName() + "   ");
+        c3.setTextSize(19);
+
+        TextView c4 = new TextView(MainActivity2.this);
+        c4.setText(pl.getPosition());
+        c4.setTextSize(19);
+
         tr.addView(c1);
         tr.addView(c2);
         tr.addView(c3);
+        tr.addView(c4);
         draft.addView(tr);
 
         final ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView3);
@@ -446,7 +472,7 @@ public class MainActivity2 extends AppCompatActivity {
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Round " + Integer.toString(round) + ":");
-                c1.setTextSize(20);
+                c1.setTextSize(19);
                 tr.addView(c1);
                 draft.addView(tr);
                 round++;
@@ -462,7 +488,7 @@ public class MainActivity2 extends AppCompatActivity {
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Round " + Integer.toString(round) + ":");
-                c1.setTextSize(20);
+                c1.setTextSize(19);
                 tr.addView(c1);
                 draft.addView(tr);
                 round++;
@@ -475,7 +501,7 @@ public class MainActivity2 extends AppCompatActivity {
         ArrayList <Player> possiblePicks = new ArrayList<Player>(playerList);
 
         for(int i = 0; i < teamList.size(); i++) {
-            if(teamList.get(i).getName().equals("Player")) {
+            if(teamList.get(i).getName().equals("User")) {
                 if(teamList.get(i).getRb1() != null && teamList.get(i).getRb2() != null  && teamList.get(i).getBn1() != null && teamList.get(i).getBn2() != null
                         && teamList.get(i).getBn3() != null && teamList.get(i).getBn4() != null) {
                     for(int j = 0; j < possiblePicks.size(); j++) {
@@ -547,7 +573,6 @@ public class MainActivity2 extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         s.setAdapter(adapter);
-
 
     }
 
