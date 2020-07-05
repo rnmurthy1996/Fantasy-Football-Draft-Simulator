@@ -63,7 +63,7 @@ public class MainActivity3 extends AppCompatActivity {
         output = output.trim();
         t.setText(output);
         t.setTextSize(24);
-        t.setMovementMethod(new ScrollingMovementMethod());
+        //t.setMovementMethod(new ScrollingMovementMethod());
 
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener()

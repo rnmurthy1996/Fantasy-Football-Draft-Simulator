@@ -47,10 +47,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Instructions:\n1. When the draft button activates, it is your turn to select and you may pick a player from thr drop down menu.
+        android:text="Instructions:\n\n1. When the draft button activates, it is your turn to select and you may pick a player from the drop down menu.
                                     \n\n2. Each roster will be composed of one QB, two RBs, three WRs, one TE, one DEF, one K, and four bench players.
-                                    \n\n3. Player projections are from lineups.com and updated as of July 1, 2020."
-        android:textSize="18sp"
+                                    \n\n3. The draft will be in snake order and your draft position will be random.
+                                    \n\n4. Player projections are from lineups.com and updated as of July 1, 2020."
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@+id/startButton"
         app:layout_constraintStart_toStartOf="@+id/startButton"
         app:layout_constraintTop_toBottomOf="@+id/startButton" />

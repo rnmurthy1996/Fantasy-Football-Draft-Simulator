@@ -189,11 +189,11 @@ public class MainActivity2 extends AppCompatActivity {
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Pick #" + Integer.toString(count) + "   ");
-                c1.setTextSize(19);
+                c1.setTextSize(16);
                 TextView c2 = new TextView(MainActivity2.this);
 
                 c2.setText(team + "   ");
-                c2.setTextSize(19);
+                c2.setTextSize(16);
 
                 TextView c3 = new TextView(MainActivity2.this);
                 String[] play = buttonVal.split("---");
@@ -212,11 +212,11 @@ public class MainActivity2 extends AppCompatActivity {
                     }
                 }
                 c3.setText(pl.getName() + "   ");
-                c3.setTextSize(19);
+                c3.setTextSize(16);
 
                 TextView c4 = new TextView(MainActivity2.this);
                 c4.setText(pl.getPosition());
-                c4.setTextSize(19);
+                c4.setTextSize(16);
 
                 c1.setTextColor(Color.GREEN);
                 c2.setTextColor(Color.GREEN);
@@ -257,11 +257,11 @@ public class MainActivity2 extends AppCompatActivity {
         tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         TextView c1 = new TextView(MainActivity2.this);
         c1.setText("Pick #" + Integer.toString(c) + "   ");
-        c1.setTextSize(19);
+        c1.setTextSize(16);
         TextView c2 = new TextView(MainActivity2.this);
 
         c2.setText(t + "   ");
-        c2.setTextSize(19);
+        c2.setTextSize(16);
 
         Team team = null;
         for(int i = 0; i < teamList.size(); i++) {
@@ -277,14 +277,14 @@ public class MainActivity2 extends AppCompatActivity {
             Random rn = new Random();
             int rand = rn.nextInt(2 - 0 + 1) + 0;
             pl = playerList.remove(rand);
-            removeCount++; 
+            removeCount++;
         }
         else if((double)(c)/(double)(num * 13) < 0.39) {
             if(team.getRb1() == null) {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("RB")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -293,7 +293,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.465) {
@@ -301,7 +301,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("RB")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -310,7 +310,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.54) {
@@ -318,7 +318,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("WR")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -327,7 +327,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.62) {
@@ -335,7 +335,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("WR")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -344,7 +344,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.695) {
@@ -352,7 +352,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("QB")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -361,7 +361,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.77) {
@@ -369,7 +369,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("WR")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -378,7 +378,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.85) {
@@ -386,7 +386,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("TE")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -395,7 +395,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else if((double)(c)/(double)(num * 13) < 0.925) {
@@ -404,7 +404,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("DEF")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -413,7 +413,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
         else {
@@ -421,7 +421,7 @@ public class MainActivity2 extends AppCompatActivity {
                 for(int i = 0; i < playerList.size(); i++) {
                     if(playerList.get(i).getPosition().equals("K")) {
                         pl = playerList.remove(i);
-                        removeCount++; 
+                        removeCount++;
                         break;
                     }
                 }
@@ -430,7 +430,7 @@ public class MainActivity2 extends AppCompatActivity {
                 Random rn = new Random();
                 int rand = rn.nextInt(2 - 0 + 1) + 0;
                 pl = playerList.remove(rand);
-                removeCount++; 
+                removeCount++;
             }
         }
 
@@ -441,11 +441,11 @@ public class MainActivity2 extends AppCompatActivity {
             }
         }
         c3.setText(pl.getName() + "   ");
-        c3.setTextSize(19);
+        c3.setTextSize(16);
 
         TextView c4 = new TextView(MainActivity2.this);
         c4.setText(pl.getPosition());
-        c4.setTextSize(19);
+        c4.setTextSize(16);
 
         tr.addView(c1);
         tr.addView(c2);
@@ -467,12 +467,23 @@ public class MainActivity2 extends AppCompatActivity {
                 round++;
             }
             else {
+                if(round != 1) {
+                    TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
+                    TableRow tr1 = new TableRow(MainActivity2.this);
+                    tr1.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                    TextView c2 = new TextView(MainActivity2.this);
+                    c2.setText("");
+                    c2.setTextSize(16);
+                    tr1.addView(c2);
+                    draft.addView(tr1);
+                }
+
                 TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
                 TableRow tr = new TableRow(MainActivity2.this);
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Round " + Integer.toString(round) + ":");
-                c1.setTextSize(19);
+                c1.setTextSize(16);
                 tr.addView(c1);
                 draft.addView(tr);
                 round++;
@@ -483,12 +494,23 @@ public class MainActivity2 extends AppCompatActivity {
                 round++;
             }
             else {
+                if(round != 1) {
+                    TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
+                    TableRow tr1 = new TableRow(MainActivity2.this);
+                    tr1.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                    TextView c2 = new TextView(MainActivity2.this);
+                    c2.setText("");
+                    c2.setTextSize(16);
+                    tr1.addView(c2);
+                    draft.addView(tr1);
+                }
+
                 TableLayout draft = (TableLayout) findViewById(R.id.tableLayout);
                 TableRow tr = new TableRow(MainActivity2.this);
                 tr.setLayoutParams(new TableRow.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 TextView c1 = new TextView(MainActivity2.this);
                 c1.setText("Round " + Integer.toString(round) + ":");
-                c1.setTextSize(19);
+                c1.setTextSize(16);
                 tr.addView(c1);
                 draft.addView(tr);
                 round++;
