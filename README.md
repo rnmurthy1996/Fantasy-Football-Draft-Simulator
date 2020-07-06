@@ -22,8 +22,8 @@ When the user runs the program, the first window they will see is the home scree
 When the draft begins, the bots will make their picks automatically if it is their turn. If it is your turn, the "Draft" button will activate and you can draft any player availlable in the drop down menu.
 
 
-<img src="app/src/main/res/raw/ds1.png" width="270" height="555">
-<img src="app/src/main/res/raw/ds2.png" width="270" height="555">
+<img src="app/src/main/res/raw/ds1.png" width="270" height="555"><img src="app/src/main/res/raw/ds2.png" width="270" height="555">
+
 
 After all selections have been made, you will be redirected to the summary screen where the roster composition of all of the teams is shown. You can compare your team to others to see how well you did and evaluate your performance. Click the "Finish" button on this screen to close the app.
 
