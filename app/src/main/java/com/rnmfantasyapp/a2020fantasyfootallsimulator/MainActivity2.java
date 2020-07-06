@@ -1,6 +1,6 @@
 //they go first: they get null errors for players
 
-package com.example.a2020fantasyfootallsimulator;
+package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +8,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Parcelable;
-import android.os.SystemClock;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ScrollView;
@@ -23,14 +19,9 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.lang.reflect.Field;
-import java.nio.Buffer;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;

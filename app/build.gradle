@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.example.a2020fantasyfootallsimulator"
+        applicationId "com.rnmfantasyapp.a2020fantasyfootallsimulator"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1

@@ -1,16 +1,13 @@
-package com.example.a2020fantasyfootallsimulator;
+package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-
-import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;

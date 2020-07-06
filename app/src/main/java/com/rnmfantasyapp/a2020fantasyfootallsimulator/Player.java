@@ -1,4 +1,4 @@
-package com.example.a2020fantasyfootallsimulator;
+package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 
 public class Player {
     private String name;

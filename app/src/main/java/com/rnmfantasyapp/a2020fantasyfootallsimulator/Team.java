@@ -1,7 +1,6 @@
-package com.example.a2020fantasyfootallsimulator;
+package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 
 import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Team implements Serializable {
