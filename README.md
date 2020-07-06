@@ -15,7 +15,7 @@ You will need a an Android device with access to the Google Play Store to downlo
 ## Using Application
 
 When the user runs the program, the first window they will see is the home screen where they choose how many teams they want in the draft simulation. Once they have chosen this, click "Start Draft" to begin. 
-![](app/src/main/res/raw/hs.png = 540x1110)
+![](app/src/main/res/raw/hs.png =540x1110)
 
 When the draft begins, the bots will make their picks automatically if it is their turn. If it is your turn, the "Draft" button will activate and you can draft any player availlable in the drop down menu.
 ![](app/src/main/res/raw/ds.png)
