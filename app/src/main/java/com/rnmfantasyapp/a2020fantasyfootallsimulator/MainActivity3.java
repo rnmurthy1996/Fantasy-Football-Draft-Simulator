@@ -16,6 +16,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+        //output roster composition off all the teams in the draft
         ArrayList<Team> teamList = MainActivity2.teamList;
         String output = "";
         for(int i = 0; i < teamList.size(); i++) {
@@ -62,6 +63,7 @@ public class MainActivity3 extends AppCompatActivity {
         t.setTextSize(24);
         //t.setMovementMethod(new ScrollingMovementMethod());
 
+        //exit app when you click finish button
         Button btn = (Button) findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener()
         {

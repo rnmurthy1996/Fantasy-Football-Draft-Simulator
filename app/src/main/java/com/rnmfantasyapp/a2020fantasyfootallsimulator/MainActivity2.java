@@ -55,6 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         removeCount = 0;
 
+        //generate team names
         Random r = new Random();
         int playerNum = r.nextInt((num - 1) + 1) + 1;
 
@@ -73,6 +74,7 @@ public class MainActivity2 extends AppCompatActivity {
             teamList.add(t);
         }
 
+        //assign pick numbers to teams using snake format
         for(int i = 0; i < teamList.size(); i++) {
             for(int j = 0; j < 13; j+=2) {
                 teamList.get(i).getPicks().add(j * num + (i+1));
@@ -80,6 +82,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         }
 
+        //read in player data from ff_data.csv and add to playerList
         InputStream is = getResources().openRawResource(R.raw.ff_data);
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
         StringBuilder total = new StringBuilder();
@@ -108,6 +111,7 @@ public class MainActivity2 extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        //remove defensive players from playerList
         for(int i = 0; i < playerList.size(); i++) {
             if(playerList.get(i).getPosition().equals("IDP")) {
                 playerList.set(i, null);
@@ -118,6 +122,7 @@ public class MainActivity2 extends AppCompatActivity {
         count = 1;
         updateSpinner();
 
+        //run draft for every pick with runner used to pause between selections
         final Handler handler = new Handler();
         final Runnable runnable = new Runnable() {
 
@@ -161,6 +166,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         Button btn = (Button) findViewById(R.id.draftButton);
 
+        //defined how clicking draft button would add selected player from spinner to user's team
+        //player would also show up on selection screen in green letters
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -241,6 +248,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
+    //defined how selections by bots would be made
+    //set prioritiy picks for them after round 4: rb1, rb2, wr1, wr2, qb, wr3, te, def, k in that order for rounds 5-13
     public void makePick(String t, int c) {
 
         TableLayout draft = (TableLayout)findViewById(R.id.tableLayout);
@@ -452,6 +461,8 @@ public class MainActivity2 extends AppCompatActivity {
         });
     }
 
+    //updated spinner to remove already drafted players after every pick so user cannot select them again
+    //also removes certain positions if there is no room on the user's team for them (ex. rb1, rb2, and all 4 bench spots full would remove all rb from spinner)
     public void updateSpinner() {
         if(num == 1) {
             if(round == 0) {
@@ -589,6 +600,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
+    //assigns position on team to selected players
     public void setPlayer(Team t, Player p) {
             if (p.getPosition().equals("RB")) {
                 if (t.getRb1() == null) {

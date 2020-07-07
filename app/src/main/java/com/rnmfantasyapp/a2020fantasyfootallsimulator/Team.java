@@ -3,6 +3,7 @@ package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+//define team and different position on the team composed of players
 public class Team implements Serializable {
     private String name = null;
     private Player qb = null;

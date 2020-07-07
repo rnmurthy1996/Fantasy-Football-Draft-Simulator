@@ -1,5 +1,6 @@
 package com.rnmfantasyapp.a2020fantasyfootallsimulator;
 
+//define player and attributes of the player
 public class Player {
     private String name;
     private String team;

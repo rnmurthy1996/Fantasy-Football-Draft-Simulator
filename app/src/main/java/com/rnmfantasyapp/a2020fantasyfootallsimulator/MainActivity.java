@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //populate spinner with optins for number of teams
         String[] arraySpinner = new String[] {
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
         };
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         s.setAdapter(adapter);
         s.setDropDownVerticalOffset(150);
 
-
+        //initialize start button
         Button btn = (Button) findViewById(R.id.startButton);
         btn.setOnClickListener(new View.OnClickListener()
         {
